@@ -20,23 +20,28 @@
                 <p>
                     Seja bem_vindo(a) novemente, Faça login para acessar sua conta e fazer as configurções de ambiente.
                 </p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
 
-                    <div>
-                        <label for="iemail"><span class="material-symbols-outlined">
-                            person
-                            </span></label>
-                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required>
+                    <div class="campo">
+
+                        <label for="iemail">
+                            <span class="material-symbols-outlined">person</span>
+                        </label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+
                     </div>
 
-                    <div>
-                        <label for="isenha"><span class="material-symbols-outlined">
-                            key
-                            </span></label>
-                        <input type="password" name="senha" id="isenha" min="8" max="15" placeholder="Sua senha" required>
+                    <div class="campo">
+
+                        <label for="isenha">
+                            <span class="material-symbols-outlined">key</span>
+                        </label>
+                        <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" placeholder="Sua senha" autocomplete="current-password" required>
+
                     </div>
 
                     <input type="submit" value="Entrar">
+                    <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>

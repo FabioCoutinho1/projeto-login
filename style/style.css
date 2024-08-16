@@ -16,9 +16,11 @@ html, body{
 }
 
 main{
+    display: flex;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -28,15 +30,12 @@ section#login{
     background-color: white;
     overflow: hidden;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.424);
 
     transition: width .3s, height .3s ;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem{
